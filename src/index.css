@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+:root{
+  background-color: rgb(51, 51, 51);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'SUSE';
+  font-weight: 600;
+  color: #e4e4e4;
+}
+
+body {
+  place-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.sign-up-box {
+  display: grid;
+  height: 90vh;
+  place-items: center;
+  margin: 0;
+  padding: 0 24px;
+  justify-content: center;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgb(60, 60, 60);
+  border-bottom: 1px solid #5fa7ba;
+}
+
+.navbar h1 {
+  color: #5fa7ba;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  background-color: #5fa7ba;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  color: #ffffff
+}
+
+.navbar button {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-size: 16px;
+  background-color: #5fa7ba;
+  border-radius: 8px;
+  border: 0;
+}
+
+.navbar button:hover {
+  color: #ffffff
+}
+
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.list-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.list-list h1 {
+  color: #00A0C6;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-header button {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-size: 16px;
+  background-color: #5fa7ba;
+  border-radius: 8px;
+  border: 0;
+}
+
+.list-header button:hover {
+  color: #ffffff
+}
+
+.list-preview {
+  opacity: 0; 
+  transform: translateY(0); 
+  align-items: center;
+  padding: 10px 16px;
+  margin: 20px 0 0;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all 0.25s ease-in-out;
+}
+
+.list-preview:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color:rgb(51, 51, 51);
+  padding: 15px;
+}
+
+.list-preview-header {
+  display: flex;
+  justify-content: space-between; 
+  color: inherit;
+}
+
+.list-button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.list-btn {
+  background-color: #00A0C6;
+  color: #e4e4e4;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;  
+  transition: opacity 0.25s ease; 
+}
+
+.list-btn:hover {
+  color: #ffffff;
+}
+
+.list-preview:hover .list-btn {
+  opacity: 1; 
+}
+
+.title-change {
+  color: inherit;
+}
+
+.list-preview input {
+  margin: 0; 
+  border: 0;
+  background: 0;
+  font-size: 24px;
+  color: inherit;
+  outline: none;
+}
+
+.list-preview input::placeholder {
+  color: inherit;
+}
+
+.list-preview textarea {
+  margin-top: 10px;
+  width: 100%;
+  height: 70%;
+  font-size: 16px;
+  border-radius: 5px;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: inherit;
+}
+
+.strike-btn {
+  background-color: #5fa7ba;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.strike-btn:hover {
+  color: #ffffff;
+}
+
+
+.sign-up-card {
+  position: relative;
+  width: 800px;
+  z-index: 3;
+  width: 100%;
+  margin: 0 20px;
+  padding: 70px 30px 44px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.sign-up-card h2 {
+  font-size: 36px;
+  margin: 0 0 12px;
+}
+
+.sign-up-form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.sign-up-form :is(input, button) {
+  width: 100%;
+  height: 56px;
+  border-radius: 6px;
+  border: 0;
+}
+
+.sign-up-form > input {
+  color: rgb(255 255 255 / 96%);
+  background: rgb(255 255 255 / 8%);
+  font-family: inherit;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.sign-up-form 
+> input::placeholder {
+  color: rgb(255 255 255 / 38%);
+}
+
+.sign-up-form button {
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background-color: #5fa7ba;
+  color: #f9f9f9;
+  border: 0;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.375s ease;
+}
+
+.sign-up-form > button:hover {
+  background-color: inherit;
+  background-color: #00A0C6;
+}
+
+.settings-menu {
+  position: fixed; 
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: rgb(25, 27, 37);
+  z-index: 1000; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.settings-menu.open {
+  transform: translateX(0);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.settings-menu.closed {
+  transform: translateX(100%);
+  box-shadow: 0;
+}
+
+.settings-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;            
+  width: 100%;
+  padding: 0 0 22px 0;
+  margin: 0 0 22px 0;
+  border-bottom: 1px solid #5fa7ba;
+}
+
+.settings-top button {
+  background-color: #00A0C6;
+  color: #e4e4e4;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+.settings-top button:hover {
+  color: #ffffff;
+}
+
+.delete-usr-btn {
+  margin-top: 22px;
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  background-color: #5fa7ba;
+  color: #f9f9f9;
+  border: 0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.375s ease;
+}
+
+.delete-usr-btn:hover {
+  background-color: inherit;
+  background-color: #c60003;
+}
